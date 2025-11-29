@@ -1,16 +1,16 @@
 <div align="center">
-  <a href="https://github.com/anncwb/vue-vben-admin">
+  <a href="https://github.com/Ducr/vue-vben-admin-playground">
     <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp">
   </a>
   <br>
   <br>
 
-[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/Ducr/vue-vben-admin-playground.svg)](LICENSE)
 
-  <h1>Vue Vben Admin</h1>
+  <h1>Vue Vben Admin Playground</h1>
 </div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vbenjs_vue-vben-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vbenjs_vue-vben-admin) [![codeql](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml) [![build](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml) [![ci](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml) [![deploy](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml/badge.svg)](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Ducr_vue-vben-admin-playground&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Ducr_vue-vben-admin-playground) [![codeql](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/codeql.yml) [![build](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/build.yml/badge.svg)](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/build.yml) [![ci](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/ci.yml/badge.svg)](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/ci.yml) [![deploy](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ducr/vue-vben-admin-playground/actions/workflows/deploy.yml)
 
 **English** | [中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md)
 
@@ -50,20 +50,20 @@ Open the project in Gitpod (free online dev environment for GitHub) and start co
 
 ## Documentation
 
-[Document](https://doc.vben.pro/)
+[Document](https://ducrong.com/vue-vben-admin-playground/docs)
 
 ## Install and Use
 
 1. Get the project code
 
 ```bash
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/Ducr/vue-vben-admin-playground.git
 ```
 
 2. Install dependencies
 
 ```bash
-cd vue-vben-admin
+cd vue-vben-admin-playground
 npm i -g corepack
 pnpm install
 ```
@@ -82,11 +82,11 @@ pnpm build
 
 ## Change Log
 
-[CHANGELOG](https://github.com/vbenjs/vue-vben-admin/releases)
+[CHANGELOG](https://github.com/Ducr/vue-vben-admin-playground/releases)
 
 ## How to Contribute
 
-You are very welcome to join! [Raise an issue](https://github.com/anncwb/vue-vben-admin/issues/new/choose) or submit a Pull Request.
+You are very welcome to join! [Raise an issue](https://github.com/Ducr/vue-vben-admin-playground/issues/new/choose) or submit a Pull Request.
 
 **Pull Request Process:**
 
@@ -128,7 +128,7 @@ Support modern browsers, not IE
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-vben-admin&type=Date)](https://star-history.com/#vbenjs/vue-vben-admin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Ducr/vue-vben-admin-playground&type=Date)](https://star-history.com/#Ducr/vue-vben-admin-playground&Date)
 
 ## Donate
 
@@ -140,18 +140,18 @@ If you think this project is helpful to you, you can help the author buy a cup o
 
 ## Contributors
 
-<a href="https://openomy.app/github/vbenjs/vue-vben-admin" target="_blank" style="display: block; width: 100%;" align="center">
-  <img src="https://openomy.app/svg?repo=vbenjs/vue-vben-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
+<a href="https://openomy.app/github/Ducr/vue-vben-admin-playground" target="_blank" style="display: block; width: 100%;" align="center">
+  <img src="https://openomy.app/svg?repo=Ducr/vue-vben-admin-playground&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
  </a>
 
-<a href="https://github.com/vbenjs/vue-vben-admin/graphs/contributors">
-  <img alt="Contributors" src="https://contrib.rocks/image?repo=vbenjs/vue-vben-admin" />
+<a href="https://github.com/Ducr/vue-vben-admin-playground/graphs/contributors">
+  <img alt="Contributors" src="https://contrib.rocks/image?repo=Ducr/vue-vben-admin-playground" />
 </a>
 
 ## Discord
 
-- [Github Discussions](https://github.com/anncwb/vue-vben-admin/discussions)
+- [Github Discussions](https://github.com/Ducr/vue-vben-admin-playground/discussions)
 
 ## License
 
-[MIT © Vben-2020](./LICENSE)
+[MIT © Ducr-2025](./LICENSE)

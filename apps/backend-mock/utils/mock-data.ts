@@ -16,9 +16,9 @@ export const MOCK_USERS: UserInfo[] = [
   {
     id: 0,
     password: '123456',
-    realName: 'Vben',
+    realName: 'Ducr',
     roles: ['super'],
-    username: 'vben',
+    username: 'ducr',
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ export const MOCK_CODES = [
   // super
   {
     codes: ['AC_100100', 'AC_100110', 'AC_100120', 'AC_100010'],
-    username: 'vben',
+    username: 'ducr',
   },
   {
     // admin
@@ -179,7 +179,7 @@ const createDemosMenus = (role: 'admin' | 'super' | 'user') => {
 export const MOCK_MENUS = [
   {
     menus: [...dashboardMenus, ...createDemosMenus('super')],
-    username: 'vben',
+    username: 'ducr',
   },
   {
     menus: [...dashboardMenus, ...createDemosMenus('admin')],

@@ -32,7 +32,7 @@ This is the latest version, 5.0, and it is not compatible with previous versions
 
 ## Preview
 
-- [Vben Admin](https://vben.pro/) - Full version Chinese site
+- [Vue Vben Admin](https://ducrong.com/vue-vben-admin/) - Full version Chinese site
 
 Test Account: vben/123456
 

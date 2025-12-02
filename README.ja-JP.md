@@ -32,7 +32,7 @@ Vue Vben Adminは、最新の`vue3`、`vite`、`TypeScript`などの主流技術
 
 ## プレビュー
 
-- [Vben Admin](https://vben.pro/) - フルバージョンの中国語サイト
+- [Vue Vben Admin](https://ducrong.com/vue-vben-admin/) - フルバージョンの中国語サイト
 
 テストアカウント：vben/123456
 

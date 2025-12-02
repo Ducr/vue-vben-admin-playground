@@ -42,7 +42,7 @@ const defaultPreferences: Preferences = {
   },
   copyright: {
     companyName: 'Vben',
-    companySiteLink: 'https://www.vben.pro',
+    companySiteLink: 'https://ducrong.com/vue-vben-admin',
     date: '2024',
     enable: true,
     icp: '',

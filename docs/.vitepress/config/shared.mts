@@ -47,7 +47,10 @@ export const shared = defineConfig({
     },
     siteTitle: 'Vben Admin',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vbenjs/vue-vben-admin' },
+      {
+        icon: 'github',
+        link: 'https://github.com/Ducr/vue-vben-admin-playground',
+      },
     ],
   },
   title: 'Vben Admin',
@@ -89,7 +92,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/vbenjs/vue-vben-admin',
+        repoURL: () => 'https://github.com/Ducr/vue-vben-admin-playground',
       }),
       GitChangelogMarkdownSection(),
       viteArchiverPlugin({ outputDir: '.vitepress' }),

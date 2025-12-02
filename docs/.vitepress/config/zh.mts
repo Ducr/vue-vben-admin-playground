@@ -16,7 +16,7 @@ export const zh = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-vben-admin/edit/main/docs/src/:path',
+        'https://github.com/Ducr/vue-vben-admin-playground/edit/main/docs/src/:path',
       text: '在 GitHub 上编辑此页面',
     },
     footer: {
@@ -235,20 +235,24 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Vben Admin',
           items: [
             {
-              link: 'https://www.vben.pro',
+              link: 'https://ducrong.com/vue-vben-admin',
               text: '演示版本',
             },
             {
-              link: 'https://ant.vben.pro',
+              link: 'https://ducrong.com/vue-vben-admin-antd',
               text: 'Ant Design Vue 版本',
             },
             {
-              link: 'https://naive.vben.pro',
+              link: 'https://ducrong.com/vue-vben-admin-naive',
               text: 'Naive 版本',
             },
             {
-              link: 'https://ele.vben.pro',
-              text: 'Element Plus版本',
+              link: 'https://ducrong.com/vue-vben-admin-ele',
+              text: 'Element Plus 版本',
+            },
+            {
+              link: 'https://ducrong.com/vue-vben-admin-tdesign',
+              text: 'TDesign 版本',
             },
           ],
         },
@@ -267,15 +271,15 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/releases',
+          link: 'https://github.com/Ducr/vue-vben-admin-playground/releases',
           text: '更新日志',
         },
         {
-          link: 'https://github.com/orgs/vbenjs/projects/5',
-          text: '路线图',
+          link: 'https://github.com/Ducr/vue-vben-admin-playground',
+          text: 'GitHub 仓库',
         },
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/Ducr/vue-vben-admin-playground/blob/main/README.md',
           text: '贡献',
         },
       ],

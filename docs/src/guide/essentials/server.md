@@ -83,7 +83,7 @@ axios.get('/api/user').then((res) => {
 在项目根目录下的 `.env.development` 文件中配置接口地址：
 
 ```bash
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 ```
 
 ## 生产环境交互
@@ -93,7 +93,7 @@ VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
 在项目根目录下的 `.env.production` 文件中配置接口地址：
 
 ```bash
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 ```
 
 ::: tip 打包如何动态修改接口地址

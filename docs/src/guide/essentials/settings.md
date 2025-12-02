@@ -63,7 +63,7 @@ VITE_INJECT_APP_LOADING=true
 VITE_BASE=/
 
 # 接口地址
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 
 # 是否开启压缩，可以设置为 none, brotli, gzip
 VITE_COMPRESS=gzip
@@ -92,7 +92,7 @@ VITE_ARCHIVER=true
 
 ```ts
 window._VBEN_ADMIN_PRO_APP_CONF_ = {
-  VITE_GLOB_API_URL: 'https://mock-napi.vben.pro/api',
+  VITE_GLOB_API_URL: 'https://ducrong.com/vben-mock-api',
 };
 Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
 Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
@@ -120,7 +120,7 @@ const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 - 首先在 `.env` 或者对应的开发环境配置文件内，新增需要可动态配置的变量，需要以 `VITE_GLOB_*` 开头的变量，如：
 
   ```bash
-  VITE_GLOB_OTHER_API_URL=https://mock-napi.vben.pro/other-api
+  VITE_GLOB_OTHER_API_URL=https://mock-napi.ducrong.com/other-api
   ```
 
 - 在 `packages/types/global.d.ts`,新增对应的类型定义，如：

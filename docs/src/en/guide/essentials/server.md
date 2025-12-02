@@ -83,7 +83,7 @@ If there is no CORS issue, you can directly ignore the [Configure Development Se
 Configure the API endpoint in the `.env.development` file at the project root directory:
 
 ```bash
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 ```
 
 ## Production Environment Interaction
@@ -93,7 +93,7 @@ VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
 Configure the API endpoint in the `.env.production` file at the project root directory:
 
 ```bash
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 ```
 
 ::: tip How to Dynamically Modify API Endpoint in Production

@@ -65,7 +65,7 @@ VITE_ARCHIVER=true
 VITE_BASE=/
 
 # API URL
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://ducrong.com/vben-mock-api
 
 # Whether to enable compression, can be set to none, brotli, gzip
 VITE_COMPRESS=gzip
@@ -93,7 +93,7 @@ When executing `pnpm build` in the root directory of the monorepo, a `dist/_app.
 
 ```ts
 window._VBEN_ADMIN_PRO_APP_CONF_ = {
-  VITE_GLOB_API_URL: 'https://mock-napi.vben.pro/api',
+  VITE_GLOB_API_URL: 'https://ducrong.com/vben-mock-api',
 };
 Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
 Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
@@ -121,7 +121,7 @@ To add a new dynamically modifiable configuration item, simply follow the steps 
 - First, add the variable that needs to be dynamically configurable in the `.env` file or the corresponding development environment configuration file. The variable must start with `VITE_GLOB_*`, for example:
 
   ```bash
-  VITE_GLOB_OTHER_API_URL=https://mock-napi.vben.pro/other-api
+  VITE_GLOB_OTHER_API_URL=https://mock-napi.ducrong.com/other-api
   ```
 
 - In `packages/types/global.d.ts`, add the corresponding type definition, such as:

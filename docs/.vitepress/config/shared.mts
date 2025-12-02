@@ -23,6 +23,7 @@ import { demoPreviewPlugin } from './plugins/demo-preview';
 import { search as zhSearch } from './zh.mts';
 
 export const shared = defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/vue-vben-admin/docs/' : '/',
   appearance: 'dark',
   head: head(),
   markdown: {

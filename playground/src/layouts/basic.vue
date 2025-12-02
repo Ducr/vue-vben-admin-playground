@@ -201,7 +201,7 @@ onBeforeMount(() => {
         :avatar
         :menus
         :text="userStore.userInfo?.realName"
-        description="ann.vben@gmail.com"
+        description="ducrong@126.com"
         tag-text="Pro"
         trigger="both"
         @logout="handleLogout"

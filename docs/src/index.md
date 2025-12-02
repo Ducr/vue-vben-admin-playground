@@ -108,4 +108,4 @@ const members = [
   />
 </VPTeamPage> -->
 
-<VbenContributors />
+<!-- <VbenContributors /> -->

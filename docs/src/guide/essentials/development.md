@@ -52,8 +52,16 @@ npm 脚本是项目常见的配置，用于执行一些常见的任务，比如�
     "build:analyze": "turbo build:analyze",
     // 构建本地 docker 镜像
     "build:docker": "./build-local-docker-image.sh",
+    // 单独构建 web-antd 应用
+    "build:antd": "pnpm run build --filter=@vben/web-antd",
     // 单独构建文档
     "build:docs": "pnpm run build --filter=@vben/docs",
+    // 单独构建 web-ele 应用
+    "build:ele": "pnpm run build --filter=@vben/web-ele",
+    // 单独构建 web-naive 应用
+    "build:naive": "pnpm run build --filter=@vben/naive",
+    // 单独构建 web-tdesign 应用
+    "build:tdesign": "pnpm run build --filter=@vben/web-tdesign",
     // 单独构建 playground 应用
     "build:play": "pnpm run build --filter=@vben/playground",
     // changeset 版本管理
@@ -74,8 +82,14 @@ npm 脚本是项目常见的配置，用于执行一些常见的任务，比如�
     "commit": "czg",
     // 启动项目（默认会运行整个仓库所有包的dev脚本）
     "dev": "turbo-run dev",
+    // 启动web-antd应用
+    "dev:antd": "pnpm -F @vben/web-antd run dev",
     // 启动文档
     "dev:docs": "pnpm -F @vben/docs run dev",
+    // 启动web-ele应用
+    "dev:ele": "pnpm -F @vben/web-ele run dev",
+    // 启动web-naive应用
+    "dev:naive": "pnpm -F @vben/web-naive run dev",
     // 启动演示应用
     "dev:play": "pnpm -F @vben/playground run dev",
     // 格式化代码
@@ -114,7 +128,25 @@ pnpm dev
 
 如果你想直接运行某个应用，可以执行以下命令：
 
-运行文档：
+运行 `web-antd` 应用：
+
+```bash
+pnpm dev:antd
+```
+
+运行 `web-naive` 应用：
+
+```bash
+pnpm dev:naive
+```
+
+运行 `web-ele` 应用：
+
+```bash
+pnpm dev:ele
+```
+
+运行 `docs` 应用：
 
 ```bash
 pnpm dev:docs
@@ -126,17 +158,72 @@ pnpm dev:docs
 pnpm dev:play
 ```
 
-运行 `docs` 应用：
-
-```bash
-pnpm dev:docs
-```
-
 ## 区分构建环境
 
 在实际的业务开发中，通常会在构建时区分多种环境，如测试环境`test`、生产环境`build`等。
 
-你可以根据自己的需要，在 `playground` 的 `package.json`、项目根目录的 `package.json` 以及 `turbo.json` 中增加对应的脚本配置来达到区分构建环境的效果（思路与原文类似，这里不再赘述具体示例）。
+此时可以修改三个文件，在其中增加对应的脚本配置来达到区分生产环境的效果。
+
+以`@vben/web-antd`添加测试环境`test`为例：
+
+- `apps\web-antd\package.json`
+
+```json
+"scripts": {
+  "build:prod": "pnpm vite build --mode production",
+  "build:test": "pnpm vite build --mode test",
+  "build:analyze": "pnpm vite build --mode analyze",
+  "dev": "pnpm vite --mode development",
+  "preview": "vite preview",
+  "typecheck": "vue-tsc --noEmit --skipLibCheck"
+},
+```
+
+增加命令`"build:test"`, 并将原`"build"`改为`"build:prod"`以避免同时构建两个环境的包。
+
+- `package.json`
+
+```json
+"scripts": {
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
+    "build:analyze": "turbo build:analyze",
+    "build:antd": "pnpm run build --filter=@vben/web-antd",
+    "build-test:antd": "pnpm run build --filter=@vben/web-antd build:test",
+
+    ······
+}
+```
+
+在根目录`package.json`中加入构建测试环境的命令
+
+- `turbo.json`
+
+```json
+"tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "dist/**",
+        "dist.zip",
+        ".vitepress/dist.zip",
+        ".vitepress/dist/**"
+      ]
+    },
+
+    "build-test:antd": {
+      "dependsOn": ["@vben/web-antd#build:test"],
+      "outputs": ["dist/**"]
+    },
+
+    "@vben/web-antd#build:test": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+
+    ······
+```
+
+在`turbo.json`中加入相关依赖的命令
 
 ## 公共静态资源
 

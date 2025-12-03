@@ -88,6 +88,10 @@ pnpm dev
 ```bash
 │
 ◆  Select the app you need to run [dev]:
+│  ○ @vben/web-antd
+│  ○ @vben/web-ele
+│  ○ @vben/web-naive
+│  ○ @vben/web-tdesign
 │  ○ @vben/docs
 │  ● @vben/playground
 └
@@ -103,6 +107,7 @@ pnpm dev
 pnpm run dev:antd
 pnpm run dev:ele
 pnpm run dev:naive
+pnpm run dev:tdesign
 pnpm run dev:docs
 pnpm run dev:play
 ```
